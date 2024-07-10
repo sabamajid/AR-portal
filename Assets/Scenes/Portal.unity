@@ -527,6 +527,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16f8637de6c344096ada49626020fbd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &515179770
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 515179771}
+  m_Layer: 0
+  m_Name: Controls
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &515179771
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 515179770}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.9, z: 1.4700004}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1888048430}
+  - {fileID: 1054143655}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!850595691 &815654876
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -1051,7 +1084,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e6246df1441b4cdfa41c5ac249915b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 0.2
 --- !u!4 &1054143655
 Transform:
   m_ObjectHideFlags: 0
@@ -1060,12 +1092,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1054143653}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.9, z: -1.4700004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 515179771}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1352046658
 GameObject:
@@ -1348,7 +1380,7 @@ GameObject:
   - component: {fileID: 1888048430}
   - component: {fileID: 1888048429}
   m_Layer: 0
-  m_Name: scaling
+  m_Name: scalingControls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1376,12 +1408,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1888048428}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.9, z: -1.4700004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 515179771}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &94809590703042880
 PrefabInstance:
@@ -1544,5 +1576,4 @@ SceneRoots:
   - {fileID: 51549052}
   - {fileID: 948485406}
   - {fileID: 1463247874}
-  - {fileID: 1888048430}
-  - {fileID: 1054143655}
+  - {fileID: 515179771}
